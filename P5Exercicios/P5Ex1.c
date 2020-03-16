@@ -11,10 +11,8 @@ int main()
     aux = n1;
 
     unidade = (n1 % 10) / 1; // Adquire o valor da unidade
-    n1 -= unidade;
     
     dezena = (n1 % 100) / 10; // Adquire o valor da dezena
-    n1 -= dezena;
     
     centena = (n1 % 1000) / 100; // Adquire o valor da centena
 
