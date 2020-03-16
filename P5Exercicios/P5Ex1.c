@@ -10,11 +10,13 @@ int main()
 
     aux = n1;
 
-    unidade = n1 % 10;
+    unidade = (n1 % 10) / 1; // Adquire o valor da unidade
     n1 -= unidade;
-    dezena = (n1 % 100) / 10;
+    
+    dezena = (n1 % 100) / 10; // Adquire o valor da dezena
     n1 -= dezena;
-    centena = (n1 % 1000) / 100;
+    
+    centena = (n1 % 1000) / 100; // Adquire o valor da centena
 
     if((pow(unidade, 3) + pow(dezena, 3) + pow(centena, 3)) == aux){
         printf("%i eh um numero de angstron", aux);
